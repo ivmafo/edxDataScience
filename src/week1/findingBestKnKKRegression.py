@@ -67,7 +67,8 @@ for k_value in k_list:
         ypreds = model.predict(xvals)
         ax.plot(xvals, ypreds,'-',label = f'k = {int(k_value)}',linewidth=j+2,color = colors[j])
         j+=1
-        
+        print()
+
 ax.legend(loc='lower right',fontsize=20)
 ax.plot(x_train, y_train,'x',label='test',color='k')
 ax.set_xlabel('TV budget in $1000',fontsize=20)
